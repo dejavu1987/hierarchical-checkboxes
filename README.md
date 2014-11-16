@@ -13,6 +13,7 @@ Template Construction:
 User ROOT template and Nest as many NODE templates 
 
 ROOT:
+```HTML
 		<div class="hierarchy-checkboxes" rel="test">
 		  <input class="hierarchy-root-checkbox" type="checkbox">
 		  <label class="hierarchy-root-label">Root</label>
@@ -20,16 +21,18 @@ ROOT:
 		   {{ NODE TEMPLATE HERE }}
 		  </div>
 		</div>
-
+```
 NODE:
+```
 		<div class="hierarchy-node [leaf]">
 		  <input class="hierarchy-checkbox" type="checkbox">
 		  <label class="hierarchy-label">[Title]</label>
 		  {{ NODE TEMPLATE HERE }}
 		</div> 
-
+```
 
 Basic Example Template
+```html
 		<div class="hierarchy-checkboxes" rel="test">
 		  <input class="hierarchy-root-checkbox" type="checkbox">
 		  <label class="hierarchy-root-label">Root</label>
@@ -48,7 +51,7 @@ Basic Example Template
 		    </div> 
 		  </div>
 		</div>
-
+```
 
 
 API:
@@ -58,6 +61,8 @@ EVENTS:
   Triggers whenever the check/uncheck tasks complete withing the hierarchical checkboxes
 
 Example:
+```javascript
 		jQuery('.hierarchy-checkboxes[rel=IDENTIFIER]').on('checkboxesUpdate',function(){
 		  console.log("Changed!");
 		});
+```
