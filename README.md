@@ -1,18 +1,18 @@
-hierarchical-checkboxes
+# Hierarchical checkboxes
 =======================
 
-jQuery for hierarchical checkboxes 
+>jQuery for hierarchical checkboxes 
 
 
-Hierarchical Checkboxes
+##Hierarchical Checkboxes
 author: Anil Maharjan
 
 
-USAGE:
+###USAGE:
 Template Construction:
 User ROOT template and Nest as many NODE templates 
 
-ROOT:
+####ROOT:
 ```HTML
 		<div class="hierarchy-checkboxes" rel="test">
 		  <input class="hierarchy-root-checkbox" type="checkbox">
@@ -22,8 +22,8 @@ ROOT:
 		  </div>
 		</div>
 ```
-NODE:
-```
+####NODE:
+```HTML
 		<div class="hierarchy-node [leaf]">
 		  <input class="hierarchy-checkbox" type="checkbox">
 		  <label class="hierarchy-label">[Title]</label>
@@ -31,7 +31,7 @@ NODE:
 		</div> 
 ```
 
-Basic Example Template
+###Basic Example Template
 ```html
 		<div class="hierarchy-checkboxes" rel="test">
 		  <input class="hierarchy-root-checkbox" type="checkbox">
@@ -54,10 +54,12 @@ Basic Example Template
 ```
 
 
-API:
+###API:
 
-EVENTS:
-1. checkboxesUpdate:
+####EVENTS:
+
+#####1. checkboxesUpdate:
+
   Triggers whenever the check/uncheck tasks complete withing the hierarchical checkboxes
 
 Example:
