@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hierarchical Checkboxes Demo</title>
+	<link rel="stylesheet" href="hierarchical-checkboxes.css">
+</head>
+<body>
+	<div class="hierarchy-checkboxes" rel="test">
+	  <input class="hierarchy-root-checkbox" type="checkbox" checked="checked">
+	  <label class="hierarchy-root-label">Root</label>
+	  <div class="hierarchy-root-child hierarchy-node">
+	   	<div class="hierarchy-node">
+	      <input class="hierarchy-checkbox" type="checkbox">
+	      <label class="hierarchy-label">Node</label>
+	      <div class="hierarchy-node leaf">
+	        <input class="hierarchy-checkbox" type="checkbox">
+	        <label class="hierarchy-label">Node (Leaf)</label>
+	      </div>
+	      <div class="hierarchy-node leaf">
+	        <input class="hierarchy-checkbox" type="checkbox">
+	        <label class="hierarchy-label">Node (Leaf)</label>
+	      </div>
+	      <div class="hierarchy-node">
+	        <input class="hierarchy-checkbox" type="checkbox">
+	        <label class="hierarchy-label">Node</label>
+	        <div class="hierarchy-node leaf">
+		        <input class="hierarchy-checkbox" type="checkbox">
+		        <label class="hierarchy-label">Node (Leaf)</label>
+		      </div>
+		      <div class="hierarchy-node leaf">
+		        <input class="hierarchy-checkbox" type="checkbox">
+		        <label class="hierarchy-label">Node (Leaf)</label>
+		      </div>
+		      <div class="hierarchy-node leaf">
+		        <input class="hierarchy-checkbox" type="checkbox">
+		        <label class="hierarchy-label">Node (Leaf)</label>
+		      </div>
+	      </div>
+	      <div class="hierarchy-node leaf">
+	        <input class="hierarchy-checkbox" type="checkbox">
+	        <label class="hierarchy-label">Node (Leaf)</label>
+	      </div>
+    	</div> 
+	    <div class="hierarchy-node leaf">
+	      <input class="hierarchy-checkbox" type="checkbox">
+	      <label class="hierarchy-label">Node (Leaf)</label>
+	    </div>
+	    <div class="hierarchy-node leaf">
+	      <input class="hierarchy-checkbox" type="checkbox">
+	      <label class="hierarchy-label">Node (Leaf)</label>
+	    </div>
+	    <div class="hierarchy-node leaf">
+	      <input class="hierarchy-checkbox" type="checkbox">
+	      <label class="hierarchy-label">Node (Leaf)</label>
+	    </div> 
+  	</div>
+	</div>
+	<script src="bower_components/jQuery/dist/jquery.min.js"></script>
+	<script src="hierarchical-checkboxes.js"></script>
+</body>
+</html>

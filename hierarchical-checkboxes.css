@@ -44,10 +44,11 @@ label.hierarchy-root-label:hover,
     margin: 0 0 0 -20px;
     font-weight: normal;
     padding-top: 5px;
+    display:block;
 }
 
-.hierarchy-checkboxes::before,
-.hierarchy-root-child .hierarchy-node::before{
+.hierarchy-checkboxes .expand-collapse-button,
+.hierarchy-root-child .hierarchy-node .expand-collapse-button{
   display:block;
   content:" ";
   float:left;
@@ -56,11 +57,11 @@ label.hierarchy-root-label:hover,
   height:16px;
   margin-top: 1px;
 }
-.hierarchy-checkboxes.child-expanded::before,
-.hierarchy-root-child .hierarchy-node.child-expanded::before{
+.hierarchy-checkboxes.child-expanded .expand-collapse-button,
+.hierarchy-root-child .hierarchy-node.child-expanded >.expand-collapse-button{
   background: url("collapse.png") no-repeat scroll 0 4px transparent;
 }
-.hierarchy-root-child .hierarchy-node.leaf::before{
+.hierarchy-root-child .hierarchy-node.leaf .expand-collapse-button{
   background:none;
   width:6px;
 }

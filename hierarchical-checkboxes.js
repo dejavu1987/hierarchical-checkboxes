@@ -73,7 +73,7 @@ jQuery(document).ready(function(){
       $this = jQuery(this);
       $this.attr('rel',$this.closest('.hierarchy-checkboxes').attr('rel'));
     }).appendTo('body').hide();
-
+    jQuery('.hierarchy-checkboxes, .hierarchy-root-child .hierarchy-node').prepend('<div class="expand-collapse-button"></div>');
     // Root label toggles root-child / Popup layer as a whole
     jQuery('.hierarchy-root-label').click(function(){
       $this = jQuery(this);
@@ -90,7 +90,10 @@ jQuery(document).ready(function(){
         $rootChild.slideUp('fast',function(){$thisNode.removeClass('child-expanded');});
       }
     });
-
+    
+    jQuery('.expand-collapse-button').click(function(){
+      jQuery(this).siblings('.hierarchy-label, .hierarchy-root-label').click();
+    });
     jQuery('.hierarchy-root-checkbox').change(function(){
       $this = jQuery(this);
       //$thisNode is parent to current checkbox so it would represent current level node
