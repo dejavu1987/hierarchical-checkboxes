@@ -1,5 +1,5 @@
 # Hierarchical checkboxes
-===
+
 
 jQuery for hierarchical checkboxes 
 
