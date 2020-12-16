@@ -3,10 +3,8 @@
 
 >jQuery for hierarchical checkboxes 
 
-author: Anil Maharjan
 
-
-###USAGE:
+### USAGE:
 
 Include 'hierarchical-checkboxes.js'
 Include 'hierarchical-checkboxes.css'
@@ -18,7 +16,7 @@ You will need to add an identifier in rel attribute to distinguish between diffe
 Template Construction:
 Use ROOT template and then nest as many NODE templates to create your hierarchy
 
-####Root:
+#### Root:
 ```HTML
 		<div class="hierarchy-checkboxes" rel="test">
 		  <input class="hierarchy-root-checkbox" type="checkbox">
@@ -28,7 +26,7 @@ Use ROOT template and then nest as many NODE templates to create your hierarchy
 		  </div>
 		</div>
 ```
-####Node:
+#### Node:
 ```HTML
 		<div class="hierarchy-node [leaf]">
 		  <input class="hierarchy-checkbox" type="checkbox">
@@ -37,7 +35,7 @@ Use ROOT template and then nest as many NODE templates to create your hierarchy
 		</div> 
 ```
 
-###Basic Example Template
+### Basic Example Template
 ```html
 		<div class="hierarchy-checkboxes" rel="test">
 		  <input class="hierarchy-root-checkbox" type="checkbox">
@@ -60,11 +58,11 @@ Use ROOT template and then nest as many NODE templates to create your hierarchy
 ```
 
 
-###API:
+### API:
 
-####Events:
+#### Events:
 
-#####1. checkboxesUpdate:
+##### 1. checkboxesUpdate:
 
   Triggers whenever the check/uncheck tasks complete within the hierarchical checkboxes. This can be useful especially when you need to do some task only after all the states of the checkboxes are updated.
 
