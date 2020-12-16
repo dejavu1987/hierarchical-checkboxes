@@ -1,7 +1,7 @@
 # Hierarchical checkboxes
-=======================
+===
 
->jQuery for hierarchical checkboxes 
+jQuery for hierarchical checkboxes 
 
 
 ### USAGE:
@@ -18,43 +18,43 @@ Use ROOT template and then nest as many NODE templates to create your hierarchy
 
 #### Root:
 ```HTML
-		<div class="hierarchy-checkboxes" rel="test">
-		  <input class="hierarchy-root-checkbox" type="checkbox">
-		  <label class="hierarchy-root-label">Root</label>
-		  <div class="hierarchy-root-child hierarchy-node">
-		   {{ NODE TEMPLATE HERE }}
-		  </div>
-		</div>
+<div class="hierarchy-checkboxes" rel="test">
+  <input class="hierarchy-root-checkbox" type="checkbox">
+  <label class="hierarchy-root-label">Root</label>
+  <div class="hierarchy-root-child hierarchy-node">
+   {{ NODE TEMPLATE HERE }}
+  </div>
+</div>
 ```
 #### Node:
 ```HTML
-		<div class="hierarchy-node [leaf]">
-		  <input class="hierarchy-checkbox" type="checkbox">
-		  <label class="hierarchy-label">[Title]</label>
-		  {{ NODE TEMPLATE HERE }}
-		</div> 
+<div class="hierarchy-node [leaf]">
+  <input class="hierarchy-checkbox" type="checkbox">
+  <label class="hierarchy-label">[Title]</label>
+  {{ NODE TEMPLATE HERE }}
+</div> 
 ```
 
 ### Basic Example Template
 ```html
-		<div class="hierarchy-checkboxes" rel="test">
-		  <input class="hierarchy-root-checkbox" type="checkbox">
-		  <label class="hierarchy-root-label">Root</label>
-		  <div class="hierarchy-root-child hierarchy-node">
-		   <div class="hierarchy-node leaf">
-		      <input class="hierarchy-checkbox" type="checkbox">
-		      <label class="hierarchy-label">Markets</label>
-		      <div class="hierarchy-node leaf">
-		        <input class="hierarchy-checkbox" type="checkbox">
-		        <label class="hierarchy-label">Markets</label>
-		      </div> 
-		    </div> 
-		    <div class="hierarchy-node leaf">
-		      <input class="hierarchy-checkbox" type="checkbox">
-		      <label class="hierarchy-label">Markets</label>
-		    </div> 
-		  </div>
-		</div>
+<div class="hierarchy-checkboxes" rel="test">
+  <input class="hierarchy-root-checkbox" type="checkbox">
+  <label class="hierarchy-root-label">Root</label>
+  <div class="hierarchy-root-child hierarchy-node">
+   <div class="hierarchy-node leaf">
+      <input class="hierarchy-checkbox" type="checkbox">
+      <label class="hierarchy-label">Markets</label>
+      <div class="hierarchy-node leaf">
+	<input class="hierarchy-checkbox" type="checkbox">
+	<label class="hierarchy-label">Markets</label>
+      </div> 
+    </div> 
+    <div class="hierarchy-node leaf">
+      <input class="hierarchy-checkbox" type="checkbox">
+      <label class="hierarchy-label">Markets</label>
+    </div> 
+  </div>
+</div>
 ```
 
 
@@ -68,7 +68,7 @@ Use ROOT template and then nest as many NODE templates to create your hierarchy
 
 Example:
 ```javascript
-		jQuery('.hierarchy-checkboxes[rel=IDENTIFIER]').on('checkboxesUpdate',function(){
-		  console.log("Changed!");
-		});
+jQuery('.hierarchy-checkboxes[rel=IDENTIFIER]').on('checkboxesUpdate',function(){
+  console.log("Changed!");
+});
 ```
