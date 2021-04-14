@@ -8,8 +8,9 @@ jQuery for hierarchical checkboxes
 
 ### USAGE:
 
-Include 'hierarchical-checkboxes.js'
-Include 'hierarchical-checkboxes.css'
+Include `hierarchical-checkboxes.js` and 
+
+Include `hierarchical-checkboxes.css`
 
 All the HTML elements with class hierarchy-checkboxes will be parsed into the hierarchical checkboxes.
 You will need to add an identifier in rel attribute to distinguish between different sets of checkboxes.
